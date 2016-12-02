@@ -7,7 +7,7 @@ wrapper.zip: API wrapper fro python
 /wav: a directory that contains a set of sound files
 rme: a directory that contains a set of postures
 
-This library use three tools to show emotions:
+This library usees three tools to show emotions:
 1) Sound
 2) Facial expression
 3) Posture
