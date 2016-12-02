@@ -1,0 +1,3 @@
+- Some of the sound files were taken from www.freesound.org, which are licensed under the Aduio 3 and Attribution Licenses.
+- Changes have been made the original sound files to make the sound “Robotized”.
+- fear_3.wav sound file is created by “klankbeeld:http://www.freesound.org/people/klankbeeld/” and made public through www.freesound.org under the Creative Commons 0 license.

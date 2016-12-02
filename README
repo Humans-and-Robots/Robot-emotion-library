@@ -1,0 +1,92 @@
+The Robot-emotion-library is a collaborative software project developed by Humans-and-Robot graduate students at the University of Virginia in Fall 2016. It is based on the open source HROS1-Framework. The library uses sound, facial expressions and postures to convey a set of emotions.
+
+The repository has several files and directories:
+emotions.py: The main library code
+sample-code.py: A sample code of the library usage
+wrapper.zip: API wrapper fro python
+/wav: a directory that contains a set of sound files
+rme: a directory that contains a set of postures
+
+This library use three tools to show emotions:
+1) Sound
+2) Facial expression
+3) Posture
+
+The library includes 5 emotions with 3 levels
+emotion_class = ['happy', 'anger', 'fear', 'surprise', 'sad']
+emotion_level = [1, 2, 3]
+
+
+* Hardware requirements:
+1) Speaker connected via headphone jack.
+2) LCD screen connected via USB port.
+
+* Software requirements:
+1) HROS1-Framework: https://github.com/Interbotix/HROS1-Framework
+2) Python API Wrapper: You can find it in this repository under the name wrapper.zip, installation process can be found in install_api_wrapper.txt
+
+* Installation instructions:
+1) Install the HRSO1-Framework
+2) Follow the steps provided in "install_api_wrapper.txt" to install the API wrapper.
+3) Move the /wav directory into the following path: ~/HROS1-Framework/Linux/project/api_wrapper2/api_wrapper2/
+   mv -r /wav ~/HROS1-Framework/Linux/project/api_wrapper2/api_wrapper2
+
+4) Move the rme file into the following path: ~/HROS1-Framework/Linux/project/rme/
+   mv rme ~/HROS1-Framework/Linux/project/rme/
+   Note that this will overwrite any rme pages you created
+5) Make sure you copy the to the directory where your code is
+
+* To run a sample code:
+sudo python sample-code.py 
+
+* Library Usage:
+The library has 4 main functions:
+1) show_emotion
+2) sound_emotion
+3) facial_emotion
+4) posture_emotion
+
+
+1) show_emotion:
+This function use a mixture of sounds, facial expressions and postures to convey different emotions
+with different levels.
+
+Usage: 
+show_emotion(emotion_class, emotion_level)
+emotion_class = ['happy', 'anger', 'fear', 'surprise', 'sad']
+emotion_level = [1, 2, 3]
+Example:
+show_emotion("happy",2)
+
+
+2) sound_emotion:
+This function use only sound to convey emotions. It has only two level for each emotion class.
+
+Usage: 
+show_emotion(emotion_class, emotion_level)
+emotion_class = ['happy', 'anger', 'fear', 'surprise', 'sad']
+emotion_level = [1, 2]
+Example:
+sound_emotion("happy",2)
+
+3) facial_emotion:
+This function use only facial expressions (emoji) to convey emotions. It has 3 level for each emotion class.
+
+Usage:
+show_emotion(emotion_class, emotion_level)
+emotion_class = ['happy', 'anger', 'fear', 'surprise', 'sad']
+emotion_level = [1, 2, 3]
+Example:
+facial_emotion("happy",2)
+
+4) posture_emotion:
+This function use only postures to convey emotions. It has only two level for each emotion class.
+
+Usage:
+show_emotion(emotion_class, emotion_level)
+emotion_class = ['happy', 'anger', 'fear', 'surprise', 'sad']
+emotion_level = [1, 2]
+Example:
+posture_emotion("happy",2)
+
+

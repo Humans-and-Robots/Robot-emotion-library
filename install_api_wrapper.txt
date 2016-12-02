@@ -1,0 +1,18 @@
+
+Below are instructions on how you should install the wrapper:
+
+1) Download the wrapper.zip.
+2) Make sure you did not compile the node_server project in the Framework. That is, unlike the other projects (e.g. RME), you did not run ‘make’. If you did, simply clean it.
+3) Copy the entire folder at  /home/pi/HROS1-Framework/Linux/project/node_server/api_wrapper to
+/home/pi/HROS1-Framework/Linux/project/api_wrapper2/api_wrapper2
+
+* You can use the “$sudo cp -r” command
+
+** This will create a new folder called api_wrapper2 in the /Linux/project/ directory. It will also copy the api_wrapper folder from the /project/node_server/ directory and rename it to api_wrapper2
+
+4) Replace the main.cpp in that folder with the main.cpp in the provided .zip and run make
+
+5) You should be able to import the api.py module no matter where it is located and it should work.
+
+6) To test the python wrapper run the program test.py.
+
