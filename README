@@ -19,7 +19,7 @@ emotion_level = [1, 2, 3]
 
 * Hardware requirements:
 1) Speaker connected via headphone jack.
-2) LCD screen connected via USB port.
+2) LCD screen connected via HDMI.
 
 * Software requirements:
 1) HROS1-Framework: https://github.com/Interbotix/HROS1-Framework
